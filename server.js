@@ -26,13 +26,13 @@ var heading=data.heading;
 var date=data.date;
 var content=data.content;
 var htmlTemplate=`
-<!doctype html>
 <html>
     <head>
-        <title>Article One | Yash Barapatre</title>
+        <title>
+        ${title}
+        </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
-      
     </head>
     <body>
         <div class= "container">
@@ -41,27 +41,17 @@ var htmlTemplate=`
         </div>
         <hr/>
         <h3>
-            Article One
+            ${heading}
         </h3>
         <div>
-            Feb 11,2017
+            ${date}
         </div>
         <div>
-            <p>
-                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-            </p>
-            <p>
-                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-            </p>
-            <p>
-                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-            </p>
+            ${content}
         </div>
         </div>
     </body>
 </html>
-
-
 `;
 return htmlTemplate;
 }
