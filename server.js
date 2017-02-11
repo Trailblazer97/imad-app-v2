@@ -29,7 +29,7 @@ var htmlTemplate=`
 <!doctype html>
 <html>
     <head>
-        <title>{$title}</title>
+        <title>Article One | Yash Barapatre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
       
@@ -41,17 +41,27 @@ var htmlTemplate=`
         </div>
         <hr/>
         <h3>
-            {$heading}
+            Article One
         </h3>
         <div>
-           {$date}
+            Feb 11,2017
         </div>
         <div>
-            {$content}
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+            </p>
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+            </p>
+            <p>
+                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+            </p>
         </div>
         </div>
     </body>
 </html>
+
+
 `;
 return htmlTemplate;
 }
