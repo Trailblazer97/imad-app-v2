@@ -83,6 +83,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/test-db', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 var names=[];
 app.get('/submit-name', function (req,res) {//URL=/submit-name?name=XXXX
    //get the name from request object
